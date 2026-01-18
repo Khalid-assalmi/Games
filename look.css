@@ -1,0 +1,401 @@
+* {
+    justify-items: center;
+    cursor: default;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top {
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(0, 108, 231);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 7px #000;
+}
+.back2 {
+    display: flex;
+    gap: 8vw;
+    margin-left: 5vw;
+}
+.back2 a {
+    cursor: pointer;
+}
+.ar {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 8vw;
+}
+#a {
+    display: inline-flex;
+    box-sizing: border-box;
+    margin-top: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgb(38, 134, 245);
+}
+#a:hover {
+    background: rgb(51, 146, 255);
+}
+.display {
+    border: 2px solid #acacac;
+    width: 98vw;
+    height: 78vh;
+    margin-top: 12vh;
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.bottom button {
+    color: #fff;
+    background: rgb(0, 108, 231);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 7px #000;
+}
+.bottom #a {
+    color: #fff;
+    background: rgb(0, 108, 231);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 7px #000;
+}
+button:hover {
+    background: rgb(38, 134, 245);
+}
+@media (max-width: 380px) {
+    .back2 a {
+        font-size: 18px;
+    }
+    #a {
+        font-size: 22px;
+    }
+    .bottom button {
+        width: 75vw;
+        height: 35px;
+        font-size: 18px;
+    }
+    .bottom #a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .add {
+        width: 80vw;
+        height: 40vh;
+    }
+    #btn {
+        position: fixed;
+        left: 70vw;
+        margin-top: 5px;
+    }
+    input {
+        width: 70vw;
+        height: 35px;
+        font-size: 18px;
+    }
+    input::placeholder {
+        font-size: 11px;
+    }
+    #click {
+        margin-top: 50px;
+        width: 50vw;
+        height: 30px;
+    }
+    .display {
+        font-size: 18px;
+    }
+    #show {
+        font-size: 33px;
+    }
+    .sh {
+        margin-left: 12px;
+        font-size: 13px;
+    }
+    .names button {
+        width: 20px;
+        height: 20px;
+    }
+    .names li {
+        width: 20px;
+        height: 20px;
+        font-size: 13px;
+    }
+}
+@media (min-width: 381px) {
+    .back2 a {
+        font-size: 20px;
+    }
+    #a {
+        font-size: 24px;
+    }
+    .bottom button {
+        width: 80vw;
+        height: 42px;
+        font-size: 17px;
+    }
+    .bottom #a {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+    .add {
+        width: 80vw;
+        height: 45vh;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    #btn {
+        position: fixed;
+        left: 71vw;
+        margin-top: 7px;
+    }
+    input {
+        width: 70vw;
+        height: 40px;
+        font-size: 20px;
+    }
+    input::placeholder {
+        font-size: 15px;
+    }
+    #click {
+        margin-top: 50px;
+        width: 50vw;
+        height: 40px;
+    }
+    .display {
+        font-size: 20px;
+    }
+    #show {
+        font-size: 42px;
+    }
+    .sh {
+        margin-left: 12px;
+        font-size: 16px;
+    }
+    .names button {
+        width: 25px;
+        height: 25px;
+    }
+    .names li {
+        width: 25px;
+        height: 25px;
+        font-size: 15px
+    }
+}
+@media (min-width: 450px) {
+    .back2 a {
+        font-size: 20px;
+    }
+    #a {
+        font-size: 24px;
+    }
+    button {
+        width: 380px;
+        font-size: 17px;
+    }
+    .add {
+        width: 80vw;
+        height: 45vh;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    #btn {
+        position: fixed;
+        left: 74vw;
+        margin-top: 7px;
+    }
+    input {
+        width: 70vw;
+        height: 40px;
+    }
+    input::placeholder {
+        font-size: 15px;
+    }
+    #click {
+        margin-top: 50px;
+        width: 50vw;
+        height: 40px;
+    }
+}
+@media (min-width: 870px) {
+    #btn {
+        position: fixed;
+        left: 77vw;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1500px) {
+    #btn {
+        position: fixed;
+        left: 82vw;
+        margin-top: 14px;
+    }
+}
+.add {
+    position: fixed;
+    top: 50px;
+    box-shadow: 0 0 5px #000;
+    position: fixed;
+    top: 20vh;
+    font-size: 15px;
+    border-radius: 12px;
+    animation: trans 0.3s linear forwards;
+    background-color: #fff;
+}
+#btn {
+    border: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 108, 231);
+    cursor: pointer;
+}
+h3 {
+    color: rgb(0, 108, 231)
+}
+input {
+    display: block;
+    justify-items: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    border: 0.015rem solid #b8b88b;
+    cursor: text;
+    transition: 0.1s;
+}
+input:hover {
+    outline: none;
+    border-color: #818181;
+    border-style: dashed;
+}
+input:focus {
+    outline: none;
+    border-color: rgb(0, 108, 231);
+    border-style: dashed;
+}
+input:hover input::placeholder {
+    margin-bottom: 20px;
+}
+#click {
+    display: block;
+    justify-items: center;
+    border: none;
+    color: #fff;
+    background: rgb(0, 108, 231);
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#click:hover {
+    background: rgb(38, 134, 245);
+}
+@keyframes trans {
+    from {
+        transform: scale(0);
+    }
+}
+.names {
+    border-bottom: 2px solid #acacac;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.names a {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+}
+.Empty {
+    width: 98vw;
+    height: 78vh;
+    justify-content: center;
+}
+.Empty h3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+}
+.Empty button {
+    display: block;
+    width: 40vw;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background: rgb(0, 108, 231);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 50px;
+}
+.Empty button:hover {
+    background-color: rgb(38, 134, 245);
+}
+#show {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.82);
+    color: #fff;
+    font-weight: 800;
+    transition: 1s;
+}
+.sh {
+    padding-top: 10px;
+    color: rgb(230, 0, 0);
+}
+.names button {
+    justify-items: flex-end;
+    border: none;
+    background: rgb(0, 108, 231);
+    border-radius: 12.5px;
+    color: #fff;
+    cursor: pointer;
+}
+.names li {
+    justify-items: flex-end;
+    border: none;
+    background: rgb(0, 108, 231);
+    border-radius: 12.5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

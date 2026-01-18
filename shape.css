@@ -1,0 +1,120 @@
+* {
+    justify-items: center;
+    color: #fff;
+    overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #000;
+}
+.display {
+    background: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+    border-radius: 16px;
+    cursor: default;
+}
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.square {
+    background-color: #202020;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+@media (max-width: 380px) {
+    .display {
+        margin-top: 10vh;
+        width: 88vw;
+        height: 20vw;
+        font-size: 25px;
+    }
+    .squares {
+        gap: 6px;
+    }
+    .square {
+        width: 26.5vw;
+        height: 26.5vw;
+        font-size: 42px;
+    }
+    .back2 a {
+        font-size: 20px;
+    }
+}
+@media (min-width: 381px) {
+    .display {
+        margin-top: 6vh;
+        width: 88vw;
+        height: 16vw;
+        font-size: 32px;
+    }
+    .squares {
+        gap: 16px;
+    }
+    .square {
+        width: 26.5vw;
+        height: 26.5vw;
+        font-size: 58px;
+    }
+    .back2 a {
+        font-size: 22px;
+    }
+}
+@media (min-width: 450px) {
+    .display {
+        margin-top: 10vh;
+        width: 430px;
+        height: 80px;
+        font-size: 36px;
+    }
+    .squares {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 16px;
+    }
+    .square {
+        width: 125px;
+        height: 125px;
+        font-size: 64px;
+    }
+    .all {
+        width: 500px;
+        height: 100vh;
+        background: #000;
+        border-radius: 16px;
+        position: fixed;
+        top: 0;
+        box-shadow: 0 0 20px #000;
+    }
+    body {
+        background: #202020;
+    }
+    .back2 a {
+        font-size: 23px;
+    }
+}
+.square:hover {
+    background-color: #363636;
+}
+.back2 {
+    width: 90vw;
+    height: 4vh;
+    position: fixed;
+    top: 16px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+.back2 a {
+    color: #fff;
+    cursor: pointer;
+}

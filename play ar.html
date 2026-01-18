@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Games</title>
+</head>
+<body>
+    <div dir="rtl">
+        <div class="back">
+                <a onclick="index()" class="ar">&rarr;</a>
+            <h6>تخمين الرقم</h6>
+        </div>
+        <div class="items">
+            <p>الكمبيوتر سوف يختار رقماً بين 0 و 100 ، ويجب عليك أن تخمنه ، تملك 6 محاولات لتخمينه.</p>
+            <input type="number" placeholder="ادخل الرقم" id="inp">
+            <div class="display" id="dis"></div>
+            <button onclick="run()">اضغط</button>
+        </div>
+    </div>
+    <script src="script ar.js"></script>
+</body>
+</html>
